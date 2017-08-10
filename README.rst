@@ -73,7 +73,7 @@ Output a reduced auth log to the screen::
 
 Output a reduced auth log to a file and print aggregate statistics to the screen::
 
-    $ omni-reduce --output ~/auth.log.reduced -s /var/log/auth.log
+    $ omni-reduce -o ~/auth.log.reduced -s /var/log/auth.log
     489 lines were analyzed in this log file.
     356 lines were determined to be noise by Animus.
     133 lines were not determined to be noise by Animus.
@@ -82,7 +82,7 @@ Output a reduced auth log to a file and print aggregate statistics to the screen
 
 Output a reduced HTTP access log to a file::
 
-    $ omni-reduce -t http --output ~/access.log.reduced /etc/log/access.log
+    $ omni-reduce -t http -o ~/access.log.reduced /etc/log/access.log
 
 
 Output lines from an HTTP access log that Animus believes to be bots, crawlers, or other internet noise::
